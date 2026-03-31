@@ -1,0 +1,63 @@
+
+:root{
+  --font-heading: 'JetBrains Mono', 'Courier New', monospace;
+  --font-body: 'JetBrains Mono', 'Courier New', monospace;
+  --fw-thin: 100;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: rgb(196, 196, 196);
+  color: chartreuse;
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+}
+
+/* No se puede repetir id */
+#container{
+  width: 70%;
+  margin: 0px auto;
+  border: 1px solid red;
+  
+}
+header{
+  background-color: red;
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  text-align: center; /* Centrar texto */
+  line-height: 100px; /* Utilizar el texto en el centro de manera vertical */
+  color: white;
+  border-bottom: 10px dashed gray;
+  font-family: var(--font-heading);
+  font-weight: var(--fw-thin);
+}
+nav{
+  background-color: aquamarine;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+nav ul li{
+  float: left;
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+  line-height: 30px;
+}
+.clearfix{
+  clear: both;
+}
+#content{
+  float: left;
+  width: 80%;
+  background-color: green;
+}
+aside{
+  float: left;
+  width: 20%;
+  background-color: orange;
+}
