@@ -2,19 +2,18 @@
 :root{
   --font-heading: 'JetBrains Mono', 'Courier New', monospace;
   --font-body: 'JetBrains Mono', 'Courier New', monospace;
-  --fw-thin: 100;
-  --fw-regular: 400;
-  --fw-bold: 700;
 }
 *{
   margin: 0px;
   padding: 0px;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-heading);
+}
 body{
   background-color: rgb(196, 196, 196);
-  color: chartreuse;
+  /* color: chartreuse; */
   font-family: var(--font-body);
-  font-weight: var(--fw-regular);
 }
 
 /* No se puede repetir id */
@@ -32,9 +31,9 @@ header{
   text-align: center; /* Centrar texto */
   line-height: 100px; /* Utilizar el texto en el centro de manera vertical */
   color: white;
-  border-bottom: 10px dashed gray;
+  border-bottom: 3px solid rgb(0, 0, 0);
   font-family: var(--font-heading);
-  font-weight: var(--fw-thin);
+  font-size: 30px;
 }
 nav{
   background-color: aquamarine;
@@ -44,17 +43,26 @@ nav{
 nav ul li{
   float: left;
   list-style: none;
-  text-decoration: none;
   margin: 10px;
   line-height: 30px;
+}
+a{
+  text-decoration: none;
 }
 .clearfix{
   clear: both;
 }
+.article h2{
+  font-size: 30px;
+  padding: 0px 2px;
+}
+.article p{
+  font-size: 18px;
+}
 #content{
   float: left;
   width: 80%;
-  background-color: green;
+  background-color: rgb(58, 168, 58);
 }
 aside{
   float: left;
