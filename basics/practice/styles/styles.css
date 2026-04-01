@@ -1,4 +1,75 @@
+:root{
+  --font-heading:'JetBrains Mono', Courier, monospace;
+  --font-body:'JetBrains Mono', Courier, monospace;
+}
 *{
   margin: 0;
   padding: 0;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-heading);
+}
+body{
+  font-family: var(--font-body);
+  color: black;
+}
+header{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li:nth-of-type(4) a{
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 20px;
+}
+nav ul li:nth-of-type(4) a:hover{
+  background-color: black;
+  border-radius: 30px;
+  color: #00efa6;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ #container{
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+ }
+ hero h2{
+  font-size: 50px;
+  width: 50%;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+hero p{
+  font-size: 24px;
+  width: 40%;
+  margin: 0px auto;
+}
+hero a{
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+hero a:nth-of-type(1){
+  background-color: black;
+  border-radius: 10px;
+}
+hero a:nth-of-type(2){
+  border: 1px solid black;
+  border-radius: 10px;
+} 
+hero a:nth-of-type(1):hover{
+  color: #00efa6;
+} 
