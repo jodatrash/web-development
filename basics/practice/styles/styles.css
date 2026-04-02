@@ -19,7 +19,7 @@ a{
 }
 header{
   width: 90%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.256);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.128);
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
