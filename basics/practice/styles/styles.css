@@ -24,7 +24,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
   font-size: 18px;
 }
 nav ul{
@@ -43,6 +43,52 @@ nav ul li:nth-of-type(4) a:hover{
 }
 #container{
   width: 70%;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 0px auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.hero-section div h2{
+  font-size: 52px;
+}
+.hero-section div p{
+  font-size: 24px;
+  width: 45%;
+  margin: 15px auto 35px;
+}
+.hero-section div a{
+  padding: 15px;
+  border-radius: 35px;
+}
+.hero-section div a:nth-of-type(1){
+  background-color: black;
+  color:white;
+}
+.hero-section div a:nth-of-type(1):hover{
+  color: #00efa6;
+}
+.hero-section div a:nth-of-type(2){
+  border: 1px solid black;
+}
+.cta-section{
+  margin: 40px auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px 0px 35px 0px;
+}
+.cta-section h2{
+  font-size: 30px;
+}
+.cta-section p{
+  font-size: 18px;
+  margin: 10px auto 30px;
+}
+.cta-section a{
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 35px;
+  background-color: black;
+  color: white;
+}
+.cta-section a:hover{
+  color: #00efa6;
 }
