@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Formularios</title>
+</head>
+
+<body>
+	<form action="" name="contacto" id="contacto" method="">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" placeholder="John Doe" maxlength="10" />
+		<!-- Otros atributos que se pueden usar: value, readonly, disable, size, maxlength -->
+		<br />
+
+		<label for="message">mensaje</label>
+		<textarea name="mensaje" id="message" placeholder="Ingresa el mensaje..."></textarea>
+		<br />
+
+		<label for="country">Selecciona tu país:</label>
+		<select name="pais" id="country">
+			<option value="mexico">México</option>
+			<option value="españa">España</option>
+			<option value="argentina">Argentina</option>
+			<option value="peru">Peru</option>
+		</select>
+		<br />
+
+		<input type="radio" id="español" name="idioma" />
+		<label for="español">Español</label>
+		<input type="radio" id="ingles" name="idioma" />
+		<label for="ingles">Inglés</label>
+		<br />
+
+		<input type="checkbox" name="terminos" id="terminos" /><label for="terminos">
+			Acepto terminos y condiciones.
+		</label>
+		<br />
+
+		<button type="submit" value="Enviar datos">Enviar</button>
+	</form>
+</body>
+
+</html>
