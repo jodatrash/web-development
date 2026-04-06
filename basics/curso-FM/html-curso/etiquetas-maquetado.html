@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etiquetas de maquetado</title>
+</head>
+
+
+
+<body>
+  <!-- EJEMPLO: Estructura sin semantica. -->
+  <div class="header">
+    <div class="nav">
+      <a href="#">Menú 1</a>
+      <a href="#">Menú 2</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="article">
+      <h3 class="tittle">Titulo del post</h3>
+      <p class="date">06 de abril 2026</p>
+      <!-- lorem10 -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed.</p>
+      <img src="media/paisaje.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <p>texto del sidebar</p>
+  </div>
+
+  <div class="footer">
+    <p>texto de pie de pagina</p>
+  </div>
+  <!-- EJEMPLO: Estructura con semantica. -->
+  <!-- 
+  section - define unsa seccion en u  documento que puede contener un grupo de contenido
+  article - define el contenido de un sitio por ejemplo un articulo
+  header - define cual sera el encabezado de un sitio web (navegacion, logo, enlaces, etc)
+  main - define la seccion principal del sitio web
+  aside - nos permite definir un area con contenido independiente al principal, como el sidebar
+  footer - define cual sera el pie de pagina de un sitio
+  figcaption - representa la leyenda o pie de pagina
+  figure - representa el contenido dentro de la etiqueta <figcaption>
+  mark - define el texto que deberia ser resaltado por el nav. web
+  nav - define el conjunto de enlaces de navegación
+  summary - define el encabezado de la etiqueda <details>
+  details - define los detalles adicionales de la etiqueta <summary>
+  time - representa un tiempo en formato computadora
+  code - define código
+  kbd - representa teclas a presionar
+  -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#">Menú 1</a>
+      <a href="#">Menú 2</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="article">
+      <h1 class="tittle">Titulo del post</h1>
+      <time datetime="2026-04-06" class="date">06 de abril 2026</time>
+      <!-- lorem10 -->
+      <p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing elit.</mark> Eum, sed.</p>
+      <figure>
+        <figcaption>
+          <img src="media/paisaje.jpg" alt="">
+          esto es un texto.
+        </figcaption>
+      </figure>
+    </article>
+
+    <section>
+      <h4>informacion adiocional</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis.</p>
+    </section>
+  </main>
+
+  <aside class="sidebar">
+    <p>texto del sidebar</p>
+  </aside>
+
+  <footer class="footer">
+    <p>texto de pie de pagina</p>
+  </footer>
+</body>
+
+</html>
