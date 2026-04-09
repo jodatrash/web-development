@@ -1,0 +1,38 @@
+/* Selectores univarsales */
+/* *{
+  color: blue;
+} */
+
+/* Selectores simples - mediante tipo o nombre */
+/* h1{
+  color: red;
+} */
+
+/* Selector de grupo */
+h1,h2,h3,h4,h5,h6{
+  color: red;
+}
+
+/* Selector desendente */
+main p{
+  font-size: 20px;
+}
+main p a{
+  font-size: 26px;
+}
+
+/* Selector de clases */
+.enlace{
+  color: yellowgreen;
+}
+header .enlace{
+  font-size: 22px;
+}
+/* Selector de ID */
+/* NO ES RECOMENDABLE TRABAJAR CON ID PARA ESTILOS CSS */
+/* #especial{
+  color: violet;
+} */
+.especial{
+  color: darkblue;
+}
