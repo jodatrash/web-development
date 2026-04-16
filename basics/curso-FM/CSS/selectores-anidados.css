@@ -1,0 +1,48 @@
+/* Ejemplo de código sin anidar */
+/* .contenedor .articulo{
+  background: lightblue;
+}
+
+.contenedor .articulo h2{
+  font-size: 40px;
+}
+
+.contenedor .articulo p{
+  font-size: 20px;
+}
+
+.contenedor .articulo a{
+  color: red;
+  font-size: 20px;
+}
+.contenedor .articulo.destacado{
+  background: lightgray;
+}
+
+.contenedor .articulo.destacado h2{
+  color: aqua;
+} */
+
+/* Ejemplo con código anidado */
+.contenedor{
+  background: lightgreen;
+  .articulo{
+    background: lightgray;
+    &.destacado{
+      background: lawngreen;
+      h2{
+        color: blue;
+      }
+    }
+    h2{
+      font-size: 40px;
+    }
+    p{
+      font-size: 20px;
+    }
+    a{
+      color: red;
+      font-size: 20px;
+    }
+  }
+}
