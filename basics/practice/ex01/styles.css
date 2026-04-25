@@ -1,0 +1,130 @@
+/* =========================================
+   VARIABLES DE LA PALETA (Para fácil uso)
+   ========================================= */
+:root {
+    --fondo-principal: #E5F2D8;
+    --fondo-secundario: #A6BFA3;
+    --acento-medio: #5D8C64;
+    --accion-principal: #365931;
+    --texto-oscuro: #274023;
+    --blanco-puro: #FFFFFF;
+}
+
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    /* El lienzo principal con el verde más claro */
+    background-color: var(--fondo-principal); 
+    color: var(--texto-oscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* =========================================
+   TARJETA DE PRODUCTO
+   ========================================= */
+.tarjeta-planta {
+    /* Fondo blanco para que la planta resalte sobre el fondo de la web */
+    background-color: var(--blanco-puro);
+    width: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(39, 64, 35, 0.1); /* Sombra teñida con nuestro verde oscuro */
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-planta:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen y Etiqueta */
+.imagen-contenedor {
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    /* Fondo verde salvia y texto oscuro */
+    background-color: var(--fondo-secundario);
+    color: var(--texto-oscuro);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Información del producto */
+.info-planta {
+    padding: 20px;
+}
+
+.titulo-planta {
+    /* Tipografía principal en el verde más profundo */
+    color: var(--texto-oscuro);
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.descripcion-planta {
+    /* Mismo color oscuro pero un poco más transparente para jerarquía */
+    color: var(--texto-oscuro);
+    opacity: 0.8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Sección de Precio y Botón */
+.compra-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio {
+    /* El precio destaca con el verde medio */
+    color: var(--acento-medio);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.btn-añadir {
+    /* Botón de acción principal en verde bosque */
+    background-color: var(--accion-principal);
+    color: var(--blanco-puro);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-añadir:hover {
+    /* Estado hover usando el verde medio */
+    background-color: var(--acento-medio);
+}
