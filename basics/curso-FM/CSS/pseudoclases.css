@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  font-size: 50px;
+  &:hover {
+    background: red;
+    color: white;
+  }
+  &:active {
+    background: #000;
+  }
+  &:visited {
+    color: aqua;
+  }
+}
+.articulos {
+  p:hover {
+    background: #414141;
+    color: aliceblue;
+  }
+}
+.cajas {
+  div {
+    color: white;
+    background-color: aquamarine;
+    height: 50px;
+    margin-bottom: 50px;
+    &:first-child {
+      background: red;
+    }
+    &:nth-child(2) {
+      background: blue;
+    }
+    &:last-child {
+      background: lime;
+    }
+    &:nth-last-child(2) {
+      background: #414141;
+    }
+  }
+}
