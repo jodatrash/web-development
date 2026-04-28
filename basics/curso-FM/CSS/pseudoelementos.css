@@ -1,0 +1,56 @@
+/* .primer-letra {
+  font-weight: 900;
+  font-size: 40px;
+} */
+
+/* anidado */
+p {
+  &::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &::first-line {
+    background: yellow;
+    font-size: 18px;
+    line-height: 50px;
+  }
+}
+* {
+  &::selection{
+    background: red;
+    color: #fff;
+  }
+}
+.caja {
+  background: red;
+  width: 150px;
+  height: 150px;
+
+  &::before {
+    content: 'Contenido antes de la caja.';
+    display: block;
+    background: black;
+    color: #fff;
+  }
+  &::after {
+    content: 'Contenido después de la caja.';
+    display: block;
+    background: black;
+    color: #fff;
+  }
+}
+.lista {
+  li{
+    &::marker {
+      content: ' - ';
+      font-size: 22px;
+      color: red;
+    }
+  }
+}
+input {
+  &::placeholder {
+    color: blue;
+    font-weight: bold;
+  }
+}
