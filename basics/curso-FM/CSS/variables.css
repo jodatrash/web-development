@@ -1,0 +1,20 @@
+:root{
+  --title-color: orangered;
+  --color-secondary: blue;
+  --font-primary: 'Arial', sans-serif;
+  --font-secondary: 'Times New Roman', serif;
+  --padding: 20px;
+  --marging: 10px;
+}
+h1{
+  color: var(--title-color);
+  font-family: var(--font-secondary);
+}
+header nav a{
+  color: var(--title-color);
+  font-family: var(--font-primary);
+}
+main a{
+  color: var(--title-color);
+  font-family: var(--font-primary);
+}
