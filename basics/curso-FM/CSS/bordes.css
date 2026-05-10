@@ -1,0 +1,54 @@
+body{
+  background: #edecec;
+}
+p{
+  padding: 40px;
+  margin: 40px;
+  background: #fff;
+  &.solid{
+    border: 10px solid #000000;
+  }
+  &.dotted{
+    border: 10px dotted #000000;
+  }
+  &.dashed{
+    border: 10px dashed #000000;
+  }
+  &.double{
+    border: 10px double #000000;
+  }
+  &.groove{
+    border: 10px groove red;
+  }
+  &.ridge{
+    border: 10px ridge red;
+  }
+  &.ridge{
+    border: 10px ridge red;
+  }
+  &.inset{
+    border: 10px inset lightblue;
+  }
+  &.outset{
+    border: 10px outset lightblue;
+  }
+  &.none{
+    border: none;
+  }
+  &.transparent{
+    border: 10px solid transparent;
+    &:hover{
+      border: 10px solid black;
+    }
+  }
+  &.multi-border{
+    border-top: 10px solid orange;
+    border-bottom: 20px dashed blue;
+    border-left: 20px double black;
+    border-right: 10px dotted black;
+  }
+  &.radius{
+    border: 10px solid black;
+    border-radius: 100px;
+  }
+}
