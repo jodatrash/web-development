@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+}
+.botonera{
+  a{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+
+    &.btn-cuadrado{
+      background: rgb(154, 13, 179);
+    }
+    &.btn-redondo{
+      background: rgb(255, 93, 17);
+      border-radius: 40px
+    }
+    &.btn-outline{
+      border: 2px solid black;
+      border-radius: 5px;
+      color: black ;
+    }
+    &.btn-gradiente{
+      background: linear-gradient(
+        45deg,
+        #00fff0,
+        #0083fe
+      );
+      border-radius: 5px;
+      color: black;
+    }
+    &.btn-sombra{
+      background: #53b435;
+      box-shadow: 5px 5px 0 0 #347121;
+      transition: .3s ease all;
+      &:hover{
+        box-shadow: 5px 5px 0 0 #819d78;
+      }
+    }
+  }
+
+}
