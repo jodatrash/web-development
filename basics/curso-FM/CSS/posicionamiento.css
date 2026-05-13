@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: #f2f2f2;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background: #262626;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 40px;
+  padding: 40px;
+  margin: 20px;
+}
+.caja-padre{
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.position{
+  background: #57af46;
+  /* position: static; por defecto */
+  /* position: relative; */
+  /* position: absolute; */
+  /* position: fixed; */
+  position: sticky;
+  top: 0px;
+  left: 200px;
+}
