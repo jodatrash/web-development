@@ -1,7 +1,15 @@
+:root{
+  --primary-font: "Roboto", sans-serif;
+}
 *{
   margin: 0;
 }
 .botonera{
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 15px;
+  width: 75%;
+  margin: 0 auto;
   a{
     display: inline-block;
     margin: 15px;
@@ -10,34 +18,62 @@
     color: white;
 
     &.btn-cuadrado{
-      background: rgb(154, 13, 179);
+      background: #650770;
+      &:hover{
+        background: rgb(154, 13, 179);
+      }
     }
     &.btn-redondo{
       background: rgb(255, 93, 17);
-      border-radius: 40px
+      border-radius: 40px;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 1px 1px 20px 1px;
+      }
     }
     &.btn-outline{
-      border: 2px solid black;
+      color: black;
+      border: 2px solid currentColor;
       border-radius: 5px;
-      color: black ;
+      &:hover{
+        background: #000;
+        color: white;
+      }
     }
     &.btn-gradiente{
-      background: linear-gradient(
+      background: #0083fe;
+      border-radius: 5px;
+      color: black;
+      &:hover{
+        background: linear-gradient(
         45deg,
         #00fff0,
         #0083fe
       );
-      border-radius: 5px;
-      color: black;
+      }
     }
     &.btn-sombra{
       background: #53b435;
       box-shadow: 5px 5px 0 0 #347121;
       transition: .3s ease all;
       &:hover{
-        box-shadow: 5px 5px 0 0 #819d78;
+        box-shadow: 3px 3px 0 0 #819d78;
+      }
+    }
+    &.btn-icono{
+      background: #ffee05;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px -30px 36px -28px inset;
+      border-radius: 5px;
+      color: #000;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 30px 36px -28px inset;
+      }
+    }
+    &.btn-enlace{
+      color: #650770;
+      border-radius: 5px;
+      &:hover{
+        background: rgba(109, 109, 109, 0.35);
       }
     }
   }
-
 }
