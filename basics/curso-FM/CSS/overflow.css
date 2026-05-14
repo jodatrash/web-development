@@ -15,5 +15,6 @@ body {
   overflow-x: auto; */
   .parrafo {
     width: 150%;
+    margin: 0px;
   }
 }
